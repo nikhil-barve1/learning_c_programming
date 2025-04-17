@@ -9,13 +9,17 @@ int main()
     printf("Enter num: ");
     scanf("%d", &n);
 
-    if (n >= 0)
+    if (n > 0)
     {
         printf("%d is positive number.", n);
     }
-    else
+    else if (n < 0)
     {
         printf("%d is negative number.", n);
+    }
+    else
+    {
+        printf("\nThe number is zero.");
     }
 
     return 0;
